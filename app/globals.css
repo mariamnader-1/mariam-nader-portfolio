@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #060913;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(165, 243, 252, 0.85);
+}
+
+.section-title {
+  margin-top: 0.9rem;
+  max-width: 48rem;
+  font-size: clamp(1.8rem, 3vw, 3.2rem);
+  line-height: 1.1;
+  font-weight: 900;
+  color: white;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem 1rem;
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  transition: 180ms ease;
+}
+
+.contact-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
