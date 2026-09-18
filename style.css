@@ -299,6 +299,18 @@ header nav{
 .p-card p{color:var(--text-muted); font-size:0.92rem;}
 .p-tech{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto;}
 
+.p-link{
+  font-family:var(--font-mono);
+  font-size:0.8rem;
+  color:var(--accent-strong);
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  width:fit-content;
+  transition:gap 0.2s ease, color 0.2s ease;
+}
+.p-link:hover{gap:8px; color:var(--text);}
+
 .p-gallery{display:grid; grid-template-columns:repeat(2, 1fr); gap:8px; overflow:hidden; border-radius:8px;}
 .p-gallery.single{grid-template-columns:1fr;}
 .p-gallery img{
